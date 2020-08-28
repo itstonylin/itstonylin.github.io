@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tony Lin's Personal Website" />
+    <title>Tony Lin</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="Images/Favicon/tony_square.ico" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- w3schools -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom Css -->
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <!-- Animation Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- animate.style -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animates transitions https://michalsnik.github.io/aos/-->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@515&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/bbcc6aaf5b.js" crossorigin="anonymous"></script>
+    <!-- Kevin Powell Youtube -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div class="spinner-wrapper">
+        <div class="spinner"></div>
+    </div>
+    <!-- ------------------------------------------------ -->
+    <div class="first animate__animated animate__bounceInDown">
+        <header>
+            <div class="nav-container">
+                <h1 class="logo animate__animated animate__backInLeft animate__delay-1s">Tony Lin</h1>
+                <nav class="site-nav">
+                    <ul>
+                        <li class="animate__animated animate__backInRight animate__delay-1s"><a
+                                href="#home-container"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+                        <li class="animate__animated animate__backInRight animate__delay-1s"><a
+                                href="#about-container"><i class="fas fa-address-card site-nav--icon"></i>About</a></li>
+                        <li class="animate__animated animate__backInLeft animate__delay-1s"><a
+                                href="#skills-container"><i class="fas fa-code site-nav--icon"></i>Skills</a></li>
+                        <li class="animate__animated animate__backInLeft animate__delay-1s"><a
+                                href="#projects-container"><i class="fas fa-briefcase site-nav--icon"></i>Portfolio</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu-toggle animate__animated animate__backInRight animate__delay-1s">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- ------------------------------------------------ -->
+    <div id="home-container">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active hero-image" id="hero-image-first"></div>
+                <div class="carousel-item hero-image" id="hero-image-second"></div>
+                <div class="carousel-item hero-image" id="hero-image-third"></div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div id="home-text">
+                <h2 class="animate__animated animate__backInDown hero_text">Hello,</h2>
+                <h1 class="animate__animated animate__lightSpeedInLeft animate__delay-1s hero_text">I'm Tony Lin</h1>
+                <h2 class="animate__animated animate__backInUp animate__delay-2s hero_text">Nice To Meet You!</h2>
+            </div>
+            <div id="home-hero-image"></div>
+        </div>
+        <ul id="social-media-row">
+            <li>
+                <a href="https://github.com/itstonylin" target="_blank">
+                    <i class="fab fa-github fa-3x animate__animated animate__backInRight animate__delay-1s"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/tony-lin-07a9361a0/" target="_blank">
+                    <i class="fab fa-linkedin-in fa-3x animate__animated animate__backInDown animate__delay-1s"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:itstonylin@outlook.com" target="_blank">
+                    <i class="fas fa-envelope fa-3x animate__animated animate__backInUp animate__delay-1s"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/itstonylin/" target="_blank">
+                    <i class="fab fa-instagram fa-3x animate__animated animate__backInLeft animate__delay-1s"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- ------------------------------------------------ -->
+    <div id="about-container">
+        <h1 data-aos="zoom-in-down" data-aos-duration="750"> <i class="fas fa-address-card"></i>About Me<i
+                class="fas fa-address-card"></i></h1>
+        <div id="about-me-container">
+            <div id="about-me-img-container" data-aos="fade-right" data-aos-duration="750">
+                <img src="Images/About-Me-Pictures/981DE297-4AEE-49FE-8FF3-A46D8C3FB654.jpg" />
+            </div>
+            <div id="about-me-p-container" data-aos="fade-left" data-aos-duration="750">
+                <p>
+                    Hi! My name is Tony Lin and I am a 17 year old student/programming enthusiast currently attending
+                    Sir John A Macdonald Collegiate Institute with aspirations to become a software developer. During my
+                    free time I like to program new things such as my mahjong counter while learning new technologies
+                    and languages.
+                    I am always excited to make new friends so feel free to contact me if you have any
+                    questions or opportunities for me.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------ -->
+    <div id="skills-container">
+        <h1 data-aos="zoom-in-down" data-aos-duration="750"><i class="fas fa-code"></i>Technical Skills<i
+                class="fas fa-code"></i></h1>
+        <div id="skills-graphic-outter-container">
+            <div data-aos="fade-right" data-aos-duration="750">
+                <p>Hypertext Markup Language (.html)</p>
+                <div class="skills-graphic-container">
+                    <div class="skills html">80%</div>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="750">
+                <p>Cascading Style Sheets (.css)</p>
+                <div class="skills-graphic-container">
+                    <div class="skills css">80%</div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="750">
+                <p>JavaScript (.js)</p>
+                <div class="skills-graphic-container">
+                    <div class="skills js">70%</div>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="750">
+                <p>Java (.java)</p>
+                <div class="skills-graphic-container">
+                    <div class="skills java">70%</div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="750">
+                <p>Python (.py)</p>
+                <div class="skills-graphic-container">
+                    <div class="skills python">60%</div>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="750">
+                <p>Bash (.sh)</p>
+                <div class="skills-graphic-container">
+                    <div class="skills bash">45%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------ -->
+    <div id="projects-container">
+        <h1 data-aos="zoom-in-down" data-aos-duration="750"><i class="fas fa-briefcase"></i>Portfolio<i
+                class="fas fa-briefcase"></i></h1>
+        <div id="projects-grid">
+            <div class="container" data-aos="flip-left">
+                <img src="Images/Project Images/mahjong counter program.png" class="image" />
+                <div class="overlay" style="display: inline-block;">
+                    <button onclick="document.getElementById('id01').style.display='block'" class="view-modal-button">
+                        View More </button>
+                    <div class="text" style="display: inline-block;">Mahjong Counter
+                    </div>
+                </div>
+                <div class="w3-container ">
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="w3-container w3-blue">
+                                <span onclick="document.getElementById('id01').style.display='none'"
+                                    class="w3-button w3-blue w3-large w3-display-topright">&times;</span>
+                                <h2>Mahjong Counter</h2>
+                            </header>
+                            <div>
+                            </div>
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'London')">Description</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'Paris')">Languages Used</button> </div>
+                            <div id="London" class="w3-container city">
+                                <h2>Description</h2>
+                                <p>Mahjong Counter is a program that calculates every player's money balance at the end
+                                    of each turn. This program also keeps track of many different things such as whose
+                                    turn it is to be the leader and the win streak they have while being leader.
+                                    There are also many miscellaneous counters such as the highest and lowest amount of
+                                    money won in
+                                    a single turn per person, highest amount won in a single turn, and total money won
+                                    out of all turns.
+                                </p>
+                            </div>
+                            <div id="Paris" class="w3-container city">
+                                <h2>Languages Used</h2>
+                                <p>This program was created using html, css and js.</p>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="w3-container w3-light-grey w3-padding footer-buttons-container">
+                                <a href="https://tonylin77777.github.io" target="_blank" class="link-to-work"><button
+                                        class="button-to-work"> Explore </button> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------------------------ -->
+        <footer>
+            <div>
+                <p>Let's Stay Connected!</p>
+                <ul id="social-media-row-footer">
+                    <li>
+                        <a href="https://github.com/itstonylin 
+                        " target="_blank">
+                            <i class="fab fa-github fa-4x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/tony-lin-07a9361a0/
+                        " target="_blank">
+                            <i class="fab fa-linkedin-in fa-4x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:itstonylin@outlook.com"> <i class="fas fa-envelope fa-4x" target="_blank"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/itstonylin/
+                        " target="_blank">
+                            <i class="fab fa-instagram fa-4x"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p>-- Reach Out To Me If You Have Any Opportunities Or Questions --</p>
+                <p>© Copyright Tony Lin 2020</p>
+            </div>
+        </footer>
+        <!-- custom js -->
+        <script src="main.js"></script>
+        <!-- animation js -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            //INITIALIZE AOS
+            AOS.init();
+        </script>
+</body>
+
+</html>
