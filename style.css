@@ -327,8 +327,20 @@ header::after {
     background-position: center;
 }
 #hero-image-third {
+    background-image: url("Images/Hero_Images/onRailByHighway.JPG");
+    background-position: 70% 20%;
+}
+#hero-image-fourth {
+    background-image: url("Images/Hero_Images/onBikeInTrailSeneca.JPG");
+    background-position: 70% 55%;
+}
+#hero-image-fifth {
     background-image: url("Images/Hero_Images/squatting_on_tarp.JPG");
     background-position: 60% 50%;
+}
+#hero-image-sixth {
+    background-image: url("Images/Hero_Images/onBikeInTrail.JPG");
+    background-position: 65% 80%;
 }
 #home-text {
     border: 3px solid #f1f1f1;
