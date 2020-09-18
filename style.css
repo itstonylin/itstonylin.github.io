@@ -522,13 +522,17 @@ body > h1 {
 .row {
     --auto-grid-min-size: 16rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
     grid-gap: 1rem;
-    width: 95%;
+    width: 90%;
     max-width: 1300px;
     margin: 2em auto;
 }
-  
+  @media only screen and (min-width: 600px ){
+    .row {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+  }
 .column {
     position: relative;
     width: 100%;
