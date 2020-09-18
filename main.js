@@ -12,35 +12,53 @@ window.addEventListener("load", function () {
 });
 // ===================================================================
 
-// Gives the modal functionality
+// Gallery
 // ===================================================================
-document.getElementsByClassName("tablink")[0].click();
 
-function openCity(evt, cityName) {
-    let i, x, tablinks;
-    x = document.getElementsByClassName("city");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < x.length; i++) {
-        tablinks[i].classList.remove("w3-light-grey");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.classList.add("w3-light-grey");
+filterSelection("all")
+function filterSelection(c) {
+  let x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    removeClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+    console.log('hi')
+  }
 }
-// ===================================================================
 
-// Allows the modal to be closed by clicking outside of it
-// ===================================================================
-// Get the modal
-let modal = document.getElementById("id01");
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+function addClass(element, name) {
+    let i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function removeClass(element, name) {
+    let i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
     }
-};
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+let btnContainer = document.getElementById("myBtnContainer");
+let btns = btnContainer.getElementsByClassName("btn");
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    let current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
 // ===================================================================
 
 // Nav Bar
@@ -49,3 +67,5 @@ $(".menu-toggle").click(function () {
     $(".site-nav").toggleClass("site-nav--open", 500);
     $(this).toggleClass("open");
 });
+// ===================================================================
+

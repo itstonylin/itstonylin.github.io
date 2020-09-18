@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Tony Lin's Personal Website" />
+    <meta name="keywords" content="Tony Lin, Computer Science, High School, Student, Technology, Toronto, Code" />
+    <meta name="author" content="Tony Lin" />
     <title>Tony Lin</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="Images/Favicon/tony_square.ico" />
@@ -195,99 +197,169 @@
         </div>
     </div>
     <!-- ------------------------------------------------ -->
-    <div id="projects-container">
-        <h1 data-aos="zoom-in-down" data-aos-duration="750"><i class="fas fa-briefcase"></i>Portfolio<i
-                class="fas fa-briefcase"></i></h1>
-        <div id="projects-grid">
-            <div class="container" data-aos="flip-left">
-                <img src="Images/Project Images/mahjong counter program.png" class="image" />
-                <div class="overlay" style="display: inline-block;">
-                    <button onclick="document.getElementById('id01').style.display='block'" class="view-modal-button">
-                        View More </button>
-                    <div class="text" style="display: inline-block;">Mahjong Counter
-                    </div>
-                </div>
-                <div class="w3-container ">
-                    <div id="id01" class="w3-modal">
-                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-                            <header class="w3-container w3-blue">
-                                <span onclick="document.getElementById('id01').style.display='none'"
-                                    class="w3-button w3-blue w3-large w3-display-topright">&times;</span>
-                                <h2>Mahjong Counter</h2>
-                            </header>
-                            <div>
-                            </div>
-                            <div class="w3-bar w3-border-bottom">
-                                <button class="tablink w3-bar-item w3-button"
-                                    onclick="openCity(event, 'London')">Description</button>
-                                <button class="tablink w3-bar-item w3-button"
-                                    onclick="openCity(event, 'Paris')">Languages Used</button> </div>
-                            <div id="London" class="w3-container city">
-                                <h2>Description</h2>
-                                <p>Mahjong Counter is a program that calculates every player's money balance at the end
-                                    of each turn. This program also keeps track of many different things such as whose
-                                    turn it is to be the leader and the win streak they have while being leader.
-                                    There are also many miscellaneous counters such as the highest and lowest amount of
-                                    money won in
-                                    a single turn per person, highest amount won in a single turn, and total money won
-                                    out of all turns.
-                                </p>
-                            </div>
-                            <div id="Paris" class="w3-container city">
-                                <h2>Languages Used</h2>
-                                <p>This program was created using html, css and js.</p>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="w3-container w3-light-grey w3-padding footer-buttons-container">
-                                <a href="https://tonylin77777.github.io" target="_blank" class="link-to-work"><button
-                                        class="button-to-work"> Explore </button> </a>
-                            </div>
-                        </div>
-                    </div>
+    <h1 data-aos="zoom-in-down" data-aos-duration="750"><i class="fas fa-briefcase"></i>Portfolio<i
+            class="fas fa-briefcase"></i></h1>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('html')"> .html</button>
+        <button class="btn" onclick="filterSelection('css')"> .css</button>
+        <button class="btn" onclick="filterSelection('js')"> .js</button>
+        <button class="btn" onclick="filterSelection('java')"> .java</button>
+        <button class="btn" onclick="filterSelection('python')"> .py</button>
+    </div>
+    <div class="main">
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column html javascript python">
+                <div class="content">
+                    <a href="https://badmahjong-client.herokuapp.com/" target="_blank"> <img
+                            src="./Images/Project Images/BadMahjong.jpg" alt="Bad Mahjong" style="width:100%">
+                    </a>
+                    <h4>Bad Mahjong</h4>
+                    <p>An online mahjong game that you can play with your friends. You need 4 players to make a lobby.
+                    </p>
+                    <form target="_blank" style="display: inline" action="https://badmahjong-client.herokuapp.com/"
+                        method="get">
+                        <button class="viewProject">Visit</button>
+                    </form>
                 </div>
             </div>
+            <div class="column html css js">
+                <div class="content">
+                    <a href="https://mahjongcounter-tl.herokuapp.com/"> <img
+                            src="./Images/Project Images/mahjongHomeScreen.jpg" alt="Mahjong Counter"
+                            style="width:100%">
+                    </a>
+                    <h4>Mahjong Counter</h4>
+                    <p>Mahjong Counter is a simple tool that will help keep track of many important aspects of the game
+                        for
+                        you while you play.</p>
+                    <form target="_blank" style="display: inline" action="https://mahjongcounter-tl.herokuapp.com/"
+                        method="get">
+                        <button class="viewProject">Visit</button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="column html css js">
+                <div class="content">
+                    <a target="_blank" href="https://colourgame-tl.herokuapp.com/"> <img
+                            src="./Images/Project Images/colourGame.jpg" alt="Colour Game" style="width:100%">
+                    </a>
+                    <h4>Colour Game</h4>
+                    <p>In each game there are 8 coloured boxes that spawn and you have to choose the coloured box that
+                        matches with the given RGB value.</p>
+                    <form target="_blank" style="display: inline" action="https://colourgame-tl.herokuapp.com/"
+                        method="get">
+                        <button class="viewProject">Visit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="column html css js">
+                <div class="content">
+                    <a target="_blank" href="https://passwordgenerator-tl.herokuapp.com/"> <img
+                            src="./Images/Project Images/passwordGenerator.jpg" alt="Password Generator"
+                            style="width:100%"></a>
+                    <h4>Password Generator</h4>
+                    <p>This program allows users to create a randomly generated password that is between 4 and 100
+                        characters long with the option to include lowercase letters, uppercase letters, numbers and
+                        symbols.</p>
+                    <form target="_blank" style="display: inline" action="https://passwordgenerator-tl.herokuapp.com/"
+                        method="get">
+                        <button class="viewProject">Visit</button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="column html css js">
+                <div class="content">
+                    <a target="_blank" href="https://unitconverter-tl.herokuapp.com/"><img
+                            src="./Images/Project Images/unitConverter.jpg" alt="Unit Converter" style="width:100%"></a>
+                    <h4>Unit Converter</h4>
+                    <p>This program allows users to convert numerical values between different units of measurement
+                        (Time,
+                        Length, Speed and Mass).</p>
+                    <form target="_blank" style="display: inline" action="https://unitconverter-tl.herokuapp.com/"
+                        method="get">
+                        <button class="viewProject">Visit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="column java">
+                <div class="content">
+                    <a target="_blank" href="https://github.com/itstonylin/Nim"><img
+                            src="./Images/Project Images/Nim.jpg" alt="Nim Game" style="width:100%"></a>
+                    <h4>Nim Game</h4>
+                    <p>Nim is a game of strategy that uses sticks. There are four piles of sticks with four to eight
+                        randomly generated sticks in each pile. The person who picks up the last stick in the game
+                        loses.
+                    </p>
+                    <form target="_blank" style="display: inline" action="https://github.com/itstonylin/Nim"
+                        method="get">
+                        <button class="viewProject">Visit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="column java">
+                <div class="content">
+                    <a target="_blank" href="https://github.com/itstonylin/Day-Number-Calculator"><img
+                            src="./Images/Project Images/DayNumber.jpg" alt="Day Number Calculator"
+                            style="width:100%"></a>
+                    <form target="_blank" style="display: inline"
+                        action="https://github.com/itstonylin/Day-Number-Calculator" method="get">
+                        <button class="viewProject">Visit</button>
+                    </form>
+                    <h4>Day Number Calculator</h4>
+                    <p>This program will calculate the numerical day of the year based on the input of the year, month
+                        and
+                        day.</p>
+                </div>
+            </div>
+            <!-- END GRID -->
         </div>
-        <!-- ------------------------------------------------ -->
-        <footer>
-            <div>
-                <p>Let's Stay Connected!</p>
-                <ul id="social-media-row-footer">
-                    <li>
-                        <a href="https://github.com/itstonylin 
+        <!-- END MAIN -->
+    </div>
+
+    <!-- ------------------------------------------------ -->
+    <footer>
+        <div>
+            <p>Let's Stay Connected!</p>
+            <ul id="social-media-row-footer">
+                <li>
+                    <a href="https://github.com/itstonylin 
                         " target="_blank">
-                            <i class="fab fa-github fa-4x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/tony-lin-07a9361a0/
+                        <i class="fab fa-github fa-4x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/tony-lin-07a9361a0/
                         " target="_blank">
-                            <i class="fab fa-linkedin-in fa-4x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:itstonylin@outlook.com"> <i class="fas fa-envelope fa-4x" target="_blank"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/itstonylin/
+                        <i class="fab fa-linkedin-in fa-4x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:itstonylin@outlook.com"> <i class="fas fa-envelope fa-4x" target="_blank"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/itstonylin/
                         " target="_blank">
-                            <i class="fab fa-instagram fa-4x"></i>
-                        </a>
-                    </li>
-                </ul>
-                <p>-- Reach Out To Me If You Have Any Opportunities Or Questions --</p>
-                <p>© Copyright Tony Lin 2020</p>
-            </div>
-        </footer>
-        <!-- custom js -->
-        <script src="main.js"></script>
-        <!-- animation js -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            //INITIALIZE AOS
-            AOS.init();
-        </script>
+                        <i class="fab fa-instagram fa-4x"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>-- Reach Out To Me If You Have Any Opportunities Or Questions --</p>
+            <p>© Copyright Tony Lin 2020</p>
+        </div>
+    </footer>
+    <!-- custom js -->
+    <script src="main.js"></script>
+    <!-- animation js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        //INITIALIZE AOS
+        AOS.init();
+    </script>
 </body>
 
 </html>
