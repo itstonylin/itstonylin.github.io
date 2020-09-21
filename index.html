@@ -28,8 +28,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom Css -->
-    <link href="style.css" type="text/css" rel="stylesheet" />
     <!-- Animation Css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <!-- animate.style -->
@@ -45,6 +43,8 @@
     <!-- Kevin Powell Youtube -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Custom Css -->
+    <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -199,18 +199,21 @@
     <!-- ------------------------------------------------ -->
     <h1 data-aos="zoom-in-down" data-aos-duration="750"><i class="fas fa-briefcase"></i>Portfolio<i
             class="fas fa-briefcase"></i></h1>
-    <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('html')"> .html</button>
-        <button class="btn" onclick="filterSelection('css')"> .css</button>
-        <button class="btn" onclick="filterSelection('js')"> .js</button>
-        <button class="btn" onclick="filterSelection('java')"> .java</button>
-        <button class="btn" onclick="filterSelection('python')"> .py</button>
+    <div data-aos="fade-left" data-aos-duration="750" id="myBtnContainer">
+        <button class="portfolio-buttons portfolio-buttons-normal portfolio-buttons-active"
+            onclick="filterSelection('all')"> Show all</button>
+        <button class="portfolio-buttons portfolio-buttons-normal" onclick="filterSelection('sort-web')">
+            .html .css .js</button>
+        <button class="portfolio-buttons portfolio-buttons-normal" onclick="filterSelection('sort-java')">
+            .java</button>
+        <button class="portfolio-buttons portfolio-buttons-normal" onclick="filterSelection('sort-python')">
+            .py</button>
     </div>
     <div class="main">
         <!-- Portfolio Gallery Grid -->
         <div class="row">
-            <div data-aos="fade-right" data-aos-duration="750" class="column html js python">
+            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
+                class="column sort-web  sort-python ">
                 <div class="content">
                     <a href="https://badmahjong-client.herokuapp.com/" target="_blank"> <img
                             src="./Images/Project Images/BadMahjong.jpg" alt="Bad Mahjong" style="width:100%">
@@ -224,7 +227,8 @@
                     </form>
                 </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="750" class="column html css js">
+            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
+                class="column sort-web  ">
                 <div class="content">
                     <a href="https://mahjongcounter-tl.herokuapp.com/"> <img
                             src="./Images/Project Images/mahjongHomeScreen.jpg" alt="Mahjong Counter"
@@ -241,7 +245,8 @@
 
                 </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="750" class="column html css js">
+            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
+                class="column sort-web  sort-sort-">
                 <div class="content">
                     <a target="_blank" href="https://colourgame-tl.herokuapp.com/"> <img
                             src="./Images/Project Images/colourGame.jpg" alt="Colour Game" style="width:100%">
@@ -255,7 +260,8 @@
                     </form>
                 </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="750" class="column html css js">
+            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
+                class="column sort-web  ">
                 <div class="content">
                     <a target="_blank" href="https://passwordgenerator-tl.herokuapp.com/"> <img
                             src="./Images/Project Images/passwordGenerator.jpg" alt="Password Generator"
@@ -271,7 +277,8 @@
 
                 </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="750" class="column html css js">
+            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
+                class="column sort-web  ">
                 <div class="content">
                     <a target="_blank" href="https://unitconverter-tl.herokuapp.com/"><img
                             src="./Images/Project Images/unitConverter.jpg" alt="Unit Converter" style="width:100%"></a>
@@ -285,7 +292,8 @@
                     </form>
                 </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="750" class="column java">
+            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
+                class="column sort-java">
                 <div class="content">
                     <a target="_blank" href="https://github.com/itstonylin/Nim"><img
                             src="./Images/Project Images/Nim.jpg" alt="Nim Game" style="width:100%"></a>
@@ -300,21 +308,50 @@
                     </form>
                 </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="750" class="column java">
+
+            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
+                class="column sort-java">
                 <div class="content">
                     <a target="_blank" href="https://github.com/itstonylin/Day-Number-Calculator"><img
                             src="./Images/Project Images/DayNumber.jpg" alt="Day Number Calculator"
                             style="width:100%"></a>
-                    <form target="_blank" style="display: inline"
-                        action="https://github.com/itstonylin/Day-Number-Calculator" method="get">
-                        <button class="viewProject">Visit</button>
                     </form>
                     <h4>Day Number Calculator</h4>
                     <p>This program will calculate the numerical day of the year based on the input of the year, month
                         and
                         day.</p>
                 </div>
+                <form target="_blank" style="display: inline"
+                    action="https://github.com/itstonylin/Day-Number-Calculator" method="get">
+                    <button class="viewProject">Visit</button>
             </div>
+
+
+            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
+                class="column sort-java sort-web  sort-python ">
+                <div class="content">
+                    <a target="_blank" href="#"> <img src="" alt="" style="width:100%"></a>
+                    <h4>Under Construction</h4>
+                    <p>I am currently working on something and it'll be up when its done! For now check my other
+                        projects on this website or my <a href="https://linktr.ee/tonylin">linktree</a>.</p>
+                    <form target="_blank" style="display: inline" action="" method="get">
+                        <button class="viewProject">Visit</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 
+                           <div data-aos="fade-right" data-aos-duration="750" class="column sort-web  ">
+                <div class="content">
+                    <a target="_blank" href="#"> <img src="" alt="" style="width:100%"></a>
+                    <h4></h4>
+                    <p></p>
+                    <form target="_blank" style="display: inline" action="" method="get">
+                        <button class="viewProject">Visit</button>
+                    </form>
+                </div>
+            </div>
+             -->
             <!-- END GRID -->
         </div>
         <!-- END MAIN -->
@@ -352,14 +389,14 @@
             <p>© Copyright Tony Lin 2020</p>
         </div>
     </footer>
-    <!-- custom js -->
-    <script src="main.js"></script>
     <!-- animation js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         //INITIALIZE AOS
         AOS.init();
     </script>
+    <!-- custom js -->
+    <script src="main.js"></script>
 </body>
 
 </html>

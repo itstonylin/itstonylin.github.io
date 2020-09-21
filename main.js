@@ -12,7 +12,7 @@ window.addEventListener("load", function () {
 });
 // ===================================================================
 
-// Gallery
+// Portfolio
 // ===================================================================
 
 filterSelection("all");
@@ -23,7 +23,6 @@ function filterSelection(c) {
     for (i = 0; i < x.length; i++) {
         removeClass(x[i], "show");
         if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-        console.log("hi");
     }
 }
 
@@ -50,16 +49,24 @@ function removeClass(element, name) {
     element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
-let btnContainer = document.getElementById("myBtnContainer");
-let btns = btnContainer.getElementsByClassName("btn");
-for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        let current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
+/* Add the active class to the button passed in */
+function setThisButtonActive(button) {
+    button.classList.add("portfolio-buttons-active");
+  }
+  
+  /* select all active buttons, and remove the active class from them */
+  function resetActiveButton() {
+    document.querySelectorAll(".portfolio-buttons-active").forEach((button) => {
+      button.classList.remove("portfolio-buttons-active");
     });
-}
+  }
+  
+  document.querySelectorAll(".portfolio-buttons").forEach((button) => {
+    button.addEventListener("click", function() {
+      resetActiveButton();
+      setThisButtonActive(button);
+    });
+  });
 
 // ===================================================================
 

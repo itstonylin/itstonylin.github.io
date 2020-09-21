@@ -572,19 +572,22 @@ body > h1 {
 }
 
 /* Style the buttons */
-.btn {
+.portfolio-buttons {
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color: white;
+    /* background-color: white; */
     cursor: pointer;
 }
+.portfolio-buttons-normal{
+    background-color: white;
+}
 
-.btn:hover {
+.portfolio-buttons:hover {
     background-color: #ddd;
 }
 
-.btn.active {
+.portfolio-buttons-active, .portfolio-buttons:active{
     background-color: #666;
     color: white;
 }

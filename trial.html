@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+        /* Style the buttons */
+        .portfolio-buttons {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            /* background-color: white; */
+            cursor: pointer;
+        }
+
+        .portfolio-buttons-normal {
+            background-color: white;
+        }
+
+        .portfolio-buttons:hover {
+            background-color: #ddd;
+        }
+
+        .portfolio-buttons-active {
+            background-color: #666;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myBtnContainer">
+        <button class="portfolio-buttons portfolio-buttons-normal portfolio-buttons-active">Show
+            all</button>
+        <button class="portfolio-buttons portfolio-buttons-normal" >.html</button>
+        <button class="portfolio-buttons portfolio-buttons-normal">.css</button>
+        <button class="portfolio-buttons portfolio-buttons-normal" >.js</button>
+        <button class="portfolio-buttons portfolio-buttons-normal" >.java</button>
+        <button class="portfolio-buttons portfolio-buttons-normal" >.py</button>
+    </div>
+    <script>
+
+        
+        function changeClass(button, classRef) {
+
+            button.classList.forEach((className) => {
+
+                if (className.startsWith("portfolio-buttons-active")) button.classList.remove(className);
+
+            });
+
+            console.log(classRef);
+            button[classRef].classList.add("portfolio-buttons-active");
+        }
+
+
+        document.querySelectorAll("portfolio-buttons").forEach((button, buttonNum) => {
+            button.addEventListener("click", function () {
+                document.querySelectorAll(".portfolio-buttons-normal").forEach((item) => {
+                    changeClass(item, buttonNum);
+                    console.log(buttonNum);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
