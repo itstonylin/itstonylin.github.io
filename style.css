@@ -500,33 +500,33 @@
     }
     
     .html {
-        width: 80%;
+        width: 100%;
         background-color: #4caf50;
         transition: 1s ease-in;
     }
     
     .css {
-        width: 80%;
+        width: 100%;
         background-color: #2196f3;
     }
     
     .js {
-        width: 70%;
+        width: 100%;
         background-color: #f44336;
     }
     
     .python {
-        width: 60%;
+        width: 100%;
         background-color: #808080;
     }
     
     .java {
-        width: 70%;
+        width: 100%;
         background-color: #cc6600;
     }
     
     .bash {
-        width: 45%;
+        width: 100%;
         background-color: #6600cc;
     }
     
