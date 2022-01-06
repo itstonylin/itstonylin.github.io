@@ -546,6 +546,29 @@
         }
     }
     /* -------------------------------------------- */
+    /* Software Styles */
+    /* -------------------------------------------- */
+
+    /* REUSES SOME STYLES FROM PROJECTS */
+
+    #software-container {
+        margin-top: 5em;
+        border: 1px solid #e6e6e6;
+    }
+    .software-box{
+        text-align: center;
+        margin-bottom: 3em;
+    }
+    #heroku-svg{
+        height: 150px;
+        width:125px;
+    }
+    .software-svg{
+        height: 150px;
+        width: 125px;
+    }
+
+    /* -------------------------------------------- */
     /* Projects Styles */
     /* -------------------------------------------- */
     
