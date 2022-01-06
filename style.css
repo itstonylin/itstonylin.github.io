@@ -512,12 +512,12 @@
     
     .js {
         width: 100%;
-        background-color: #f44336;
+        background-color: #B26464;
     }
     
     .python {
         width: 100%;
-        background-color: #808080;
+        background-color: #17DEEE;
     }
     
     .java {
@@ -527,9 +527,19 @@
     
     .bash {
         width: 100%;
-        background-color: #6600cc;
+        background-color: #FF7F50;
+    }
+
+    .haskell {
+        width: 100%;
+        background-color: #F2E50B;
     }
     
+    .sql {
+        width: 100%;
+        background-color:#FF4162;
+    }
+
     @media only screen and (max-width: 500px) {
         #skills-graphic-outter-container {
             width: 95%;
