@@ -512,7 +512,7 @@
     
     .js {
         width: 100%;
-        background-color: #B26464;
+        background-color: #f44336;
     }
     
     .python {
@@ -539,7 +539,6 @@
         width: 100%;
         background-color:#FF4162;
     }
-
     @media only screen and (max-width: 500px) {
         #skills-graphic-outter-container {
             width: 95%;
