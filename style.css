@@ -529,7 +529,7 @@
         width: 100%;
         background-color: #FF7F50;
     }
-
+    
     .haskell {
         width: 100%;
         background-color: #F2E50B;
@@ -537,8 +537,9 @@
     
     .sql {
         width: 100%;
-        background-color:#FF4162;
+        background-color: #FF4162;
     }
+    
     @media only screen and (max-width: 500px) {
         #skills-graphic-outter-container {
             width: 95%;
@@ -637,6 +638,27 @@
     .portfolio-buttons:active {
         background-color: #666;
         color: white;
+    }
+    /* -------------------------------------------- */
+    /* Resume Styles */
+    /* -------------------------------------------- */
+    
+    #period0,
+    #period1,
+    #period2,
+    #period3 {
+        height: 40vh;
+    }
+    
+    #period0 {
+        margin-top: 5em;
+    }
+    
+    #period0 h1,
+    #period1 h1,
+    #period2 h1,
+    #period3 h1 {
+        margin: 1em;
     }
     /* -------------------------------------------- */
     /* Resume Styles */
