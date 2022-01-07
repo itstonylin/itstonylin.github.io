@@ -1,6 +1,8 @@
     @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
     @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik&family=Work+Sans:wght@700&display=swap');
+
     * {
         /* font-family: "Lemonada", cursive; */
         box-sizing: border-box;
@@ -771,6 +773,8 @@
     
     footer p {
         text-align: center;
+        font-size: 2em;
+        font-family: 'Rubik', sans-serif;
     }
     
     #social-media-row-footer {
@@ -791,5 +795,10 @@
     
     #social-media-row-footer i:hover {
         color: green;
+    }
+    @media (max-width: 1009px) {
+        footer p{
+            font-size: 1em;
+        }
     }
     /* -------------------------------------------- */
