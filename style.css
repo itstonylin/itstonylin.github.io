@@ -548,26 +548,22 @@
     /* -------------------------------------------- */
     /* Software Styles */
     /* -------------------------------------------- */
-
     /* REUSES SOME STYLES FROM PROJECTS */
-
+    
     #software-container {
         margin-top: 5em;
         border: 1px solid #e6e6e6;
     }
-    .software-box{
+    
+    .software-box {
         text-align: center;
         margin-bottom: 3em;
     }
-    #heroku-svg{
-        height: 150px;
-        width:125px;
-    }
-    .software-svg{
+    
+    .software-svg {
         height: 150px;
         width: 125px;
     }
-
     /* -------------------------------------------- */
     /* Projects Styles */
     /* -------------------------------------------- */
@@ -663,7 +659,55 @@
         color: white;
     }
     /* -------------------------------------------- */
-    /* Resume Styles */
+    /* Awards Styles */
+    /* -------------------------------------------- */
+    /* REUSES SOME STYLES FROM PROJECTS */
+    
+    #awards-container {
+        margin-top: 5em;
+        border: 1px solid #e6e6e6;
+    }
+    
+    .awards-box {
+        margin-bottom: 3em;
+    }
+    /* .awards-box h6{
+        text-align: left;
+    } */
+    
+    .awards-box h2 {
+        text-align: center;
+    }
+    
+    .awards-list {
+        list-style: none;
+    }
+    
+    .awards-box ul li h6{
+        font-weight: 700;
+    }
+    /* 
+
+    .awards-legend {
+        --auto-grid-min-size: 16rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+        width: 90%;
+        max-width: 1600px;
+        margin: 2em auto;
+    }
+    
+    .awards-legend div {
+        width: 300px;
+    }
+    @media only screen and (min-width: 600px) {
+        .awards-legend {
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        }
+    } */
+    /* -------------------------------------------- */
+    /* Dot Styles */
     /* -------------------------------------------- */
     
     #period0,
