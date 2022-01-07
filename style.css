@@ -1,5 +1,6 @@
     @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
     * {
         /* font-family: "Lemonada", cursive; */
         box-sizing: border-box;
@@ -554,6 +555,13 @@
         margin-top: 10em;
         border: 1px solid #e6e6e6;
     }
+    #software-container h2{
+        text-decoration: none;
+        margin-top: 10px;
+        font-family: 'Work Sans', sans-serif;
+
+    }
+
     
     .software-box {
         text-align: center;
@@ -675,6 +683,7 @@
     
     .awards-box h2 {
         text-align: center;
+        font-family: 'Work Sans', sans-serif;
     }
     
     .awards-list {
@@ -683,6 +692,7 @@
     
     .awards-box ul li h6{
         font-weight: 700;
+        
     }
     /* 
 
