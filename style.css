@@ -276,7 +276,7 @@
     .open .hamburger::after {
         transform: translateY(-3px) rotate(-90deg);
     }
-
+    
     @media (min-width: 1235px) {
         .menu-toggle {
             display: none;
@@ -400,19 +400,19 @@
     /* About Styles */
     /* -------------------------------------------- */
     
-    #about-container {
+    #about {
         margin-top: 5em;
         border: 1px solid #e6e6e6;
     }
     
-    #about-container h1 {
+    #about h1 {
         margin-top: 1em;
         text-align: center;
     }
     
-    #about-container p,
-    #about-container h1,
-    #about-container h2 {
+    #about p,
+    #about h1,
+    #about h2 {
         color: black;
     }
     
@@ -464,16 +464,15 @@
     /* Experience Styles */
     /* -------------------------------------------- */
     
-    #experience-title{
+    #experience {
         margin-top: 2em;
     }
-
+    
     #timeline-container {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100vw;
-        margin: 0;
         padding: 1vh 100px;
         font-family: 'Work Sans', sans-serif;
         font-weight: 300;
@@ -503,6 +502,7 @@
         width: 4px;
         background: black;
     }
+    
     .timeline:after {
         content: "";
         display: table;
@@ -569,29 +569,28 @@
         content: "–";
         margin-right: 0.5em;
     }
-
+    
     @media only screen and (max-width: 960px) {
         .timeline {
             padding: 100px 20px;
         }
-        #timeline-container{
+        #timeline-container {
             padding: 2vw;
         }
         .entry .title:before {
             right: -24.25px;
         }
     }
-   
     /* -------------------------------------------- */
     /* Languages Styles */
     /* -------------------------------------------- */
     
-    #skills-container {
+    #languages {
         margin-top: 5em;
         border: 1px solid #e6e6e6;
     }
     
-    #skills-container h1 {
+    #languages h1 {
         margin-top: 1em;
     }
     
@@ -669,7 +668,7 @@
     /* Software Styles  (REUSES SOME STYLES FROM PROJECTS)*/
     /* -------------------------------------------- */
     
-    #software-title {
+    #software {
         margin-top: 2em;
     }
     
@@ -695,6 +694,10 @@
     /* -------------------------------------------- */
     /* Projects Styles */
     /* -------------------------------------------- */
+    
+    #portfolio {
+        margin-top: 2em;
+    }
     
     #myBtnContainer {
         text-align: center;
@@ -789,7 +792,7 @@
     /* Awards Styles (REUSES SOME STYLES FROM PROJECTS) */
     /* -------------------------------------------- */
     
-    #awards-certs-title {
+    #awards-certifications {
         margin-top: 2em;
     }
     
@@ -845,7 +848,7 @@
         text-align: center;
     }
     
-    #resume-title {
+    #resume {
         margin: 2em 0 0.5em 0;
     }
     
