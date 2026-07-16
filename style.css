@@ -444,65 +444,45 @@
     /* -------------------------------------------- */
     /* About Styles */
     /* -------------------------------------------- */
-    
-    #about {
-        margin: 6em 0 1em 0;
-        border: 1px solid #e6e6e6;
-    }
-    
-    #about h1 {
-        margin-top: 1em;
-        text-align: center;
-    }
-    
-    #about p,
-    #about h1,
-    #about h2 {
-        color: black;
-    }
-    
+
     #about-me-container {
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
+        gap: 3rem;
     }
-    
-    #about-me-container img {
-        width: 80%;
-        min-width: 300px;
-        max-width: 600px;
+
+    #about-me-img-container {
+        flex: 1 1 45%;
+    }
+
+    #about-me-img-container img {
+        width: 100%;
         height: auto;
         display: block;
-        margin: 0 auto;
+        border-radius: 16px;
     }
-    
+
     #about-me-p-container {
-        width: 50%;
-        margin: 1em 2em;
+        flex: 1 1 55%;
     }
-    
+
     #about-me-p-container p {
-        width: 90%;
-        margin: 0 auto;
         font-family: var(--font-body);
-        font-size: 2em;
-        text-align: justify;
+        font-size: 1.125rem;
+        line-height: 1.7;
+        color: var(--gray-5);
+        margin: 0 0 1.25em;
     }
-    
-    #about-me-img-container {
-        width: 50%;
-        margin: 1em 2em;
+
+    .about-highlight {
+        color: var(--accent);
+        font-weight: 600;
     }
-    
+
     @media only screen and (max-width: 900px) {
-        #about-me-img-container {
-            width: 100%;
-        }
-        #about-me-p-container {
-            width: 100%;
-        }
         #about-me-container {
             flex-direction: column;
+            gap: 1.5rem;
         }
     }
     /* -------------------------------------------- */
