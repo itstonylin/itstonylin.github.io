@@ -66,6 +66,15 @@ Same social links (GitHub, LinkedIn, email, phone), Swiss restyle, copyright "©
 
 - Hero changes, new screenshots for projects (cards work without images), rebuilding on a framework, changing hosting/DNS.
 
+## Implementation
+
+Executed 2026-07-16 on branch `revamp/swiss-modern` via subagent-driven development (7 tasks, each spec+quality reviewed; final whole-branch review: ready to merge). All 18 browser checks passed at 1440px and 390px widths; screenshots in `.superpowers/sdd/`. Notable details for future edits:
+
+- To publish a link on ApptVia/Coping-Gacha/Peerio: in their `.pf-link` anchor, set `href` and remove the `hidden` attribute.
+- Experience filter/accordion JS lives in `main.js` (`.pill` filter by `data-category`, `.xp-head` toggles `.open`).
+- Resume PDF is generated from `~/Documents/Resumes/resume.tex` (pdflatex ×2) and copied to `Resume/Tony's Resume.pdf` — same filename, HTML unchanged.
+- Known cosmetic debt (shippable, fix opportunistically): style.css mixed indentation, accordion `max-height: 500px` could clip at ~320px widths, collapsed accordion bodies aren't aria-hidden.
+
 ## Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
