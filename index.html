@@ -310,248 +310,73 @@
 
     <!-- ------------------------------------------------ -->
 
-    <h1 data-aos="zoom-in-down" data-aos-duration="750" id="portfolio">Portfolio</h1>
-    <div data-aos="fade-left" data-aos-duration="750" id="myBtnContainer">
-        <button class="portfolio-buttons portfolio-buttons-normal portfolio-buttons-active"
-            onclick="filterSelection('all')"> Show all</button>
-        <button class="portfolio-buttons portfolio-buttons-normal" onclick="filterSelection('sort-web')">
-            .html .css .js</button>
-        <button class="portfolio-buttons portfolio-buttons-normal" onclick="filterSelection('sort-java')">
-            .java</button>
-        <button class="portfolio-buttons portfolio-buttons-normal" onclick="filterSelection('sort-python')">
-            .py</button>
-        <button class="portfolio-buttons portfolio-buttons-normal" onclick="filterSelection('sort-elm')">
-            .elm</button>
-    </div>
-    <div class="main">
-        <!-- Portfolio Gallery Grid -->
-        <div class="row">
-            <!-- transition for portfolio elements template
-                   data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom" 
-               -->
-            <div data-aos="fade-left" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-web  sort-python ">
-                <div class="content">
-                    <a href="https://github.com/itstonylin/Bad-Mahjong" target="_blank"> <img
-                            src="./Images/Project Images/BadMahjong.jpg" alt="bad mahjong" style="width:100%">
-                    </a>
-                    <h4>Bad Mahjong</h4>
-                    <p>An online mahjong game that requires 4 players.
-                    </p>
-                    <form target="_blank" style="display: inline" action="https://github.com/itstonylin/Bad-Mahjong"
-                        method="get">
-                        <button class="viewProject">Visit</button>
-                    </form>
+    <section id="portfolio" class="section">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="600">Portfolio</h2>
+        <div id="portfolio-rows">
+            <article class="pf-row" data-aos="fade-up" data-aos-duration="600">
+                <span class="pf-num">01</span>
+                <div class="pf-main">
+                    <div class="pf-top">
+                        <h3 class="pf-name">ApptVia
+                            <!-- To publish a link: set href and remove `hidden` -->
+                            <a class="pf-link" href="" hidden target="_blank" aria-label="Visit ApptVia">↗</a>
+                        </h3>
+                        <span class="pf-dates">2026 — now</span>
+                    </div>
+                    <p class="pf-desc">AI-powered scheduling platform for service businesses — online booking, payments, notifications, and a multi-channel scheduling agent.</p>
+                    <div class="pf-tags">
+                        <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">PostgreSQL</span><span class="tag">OpenAI</span><span class="tag">Stripe</span><span class="tag">Twilio</span>
+                    </div>
                 </div>
-            </div>
-            <div data-aos="fade-left" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-web  ">
-                <div class="content">
-                    <a href="https://mahjong-counter.onrender.com"> <img
-                            src="./Images/Project Images/mahjongHomeScreen.jpg" alt="mahjong counter"
-                            style="width:100%">
-                    </a>
-                    <h4>Mahjong Counter</h4>
-                    <p>A simple tool that helps keep track of many important metrics during gameplay.</p>
-                    <form target="_blank" style="display: inline" action="https://mahjong-counter.onrender.com"
-                        method="get">
-                        <button class="viewProject">Visit</button>
-                    </form>
-
+            </article>
+            <article class="pf-row" data-aos="fade-up" data-aos-duration="600">
+                <span class="pf-num">02</span>
+                <div class="pf-main">
+                    <div class="pf-top">
+                        <h3 class="pf-name">Coping-Gacha
+                            <a class="pf-link" href="" hidden target="_blank" aria-label="Visit Coping-Gacha">↗</a>
+                            <span class="pf-badge">GI 2026 Research</span>
+                        </h3>
+                        <span class="pf-dates">2026</span>
+                    </div>
+                    <p class="pf-desc">Therapeutic app with 10 AI personalities and cross-conversation memory — published as a Graphics Interface 2026 extended abstract and poster.</p>
+                    <div class="pf-tags">
+                        <span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">Claude</span><span class="tag">Supabase</span>
+                    </div>
                 </div>
-            </div>
-            <div data-aos="fade-left" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-elm">
-                <div class="content">
-                    <a target="_blank"
-                        href="https://cs1xd3.online/ShowModulePublish?modulePublishId=81790b37-baec-4003-97a4-9f98fa014058">
-                        <img src="./Images/Project Images/linearalgebralizer.png" alt="linear algebralizer"
-                            style="width:100%"></a>
-                    <h4>Linear Algebralizer</h4>
-                    <p>A web study tool that contains a plethora of information on linear algebra theorems.
-                        Allows the user to visualize different linear algebra theorems through their input.</p>
-                    <form target="_blank" style="display: inline"
-                        action="https://cs1xd3.online/ShowModulePublish?modulePublishId=81790b37-baec-4003-97a4-9f98fa014058"
-                        method="get">
-                        <button class="viewProject">🖕 image</button>
-                    </form>
+            </article>
+            <article class="pf-row" data-aos="fade-up" data-aos-duration="600">
+                <span class="pf-num">03</span>
+                <div class="pf-main">
+                    <div class="pf-top">
+                        <h3 class="pf-name">Peerio
+                            <a class="pf-link" href="" hidden target="_blank" aria-label="Visit Peerio">↗</a>
+                        </h3>
+                        <span class="pf-dates">2025 — 2026</span>
+                    </div>
+                    <p class="pf-desc">Tinder-style two-way matching between people seeking project experience and project creators — hybrid matching engine with semantic similarity and Elo ranking.</p>
+                    <div class="pf-tags">
+                        <span class="tag">React Native</span><span class="tag">Python</span><span class="tag">Supabase</span><span class="tag">Railway</span>
+                    </div>
                 </div>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-elm">
-                <div class="content">
-                    <a target="_blank"
-                        href="https://cs1xd3.online/ShowModulePublish?modulePublishId=b284330b-5e0a-42e9-adae-d10f13cf4d3a">
-                        <img src="./Images/Project Images/amogus.png" alt="amogus" style="width:100%"></a>
-                    <h4>Amogus</h4>
-                    <p>Amogus... kind of...</p>
-                    <form target="_blank" style="display: inline"
-                        action="https://cs1xd3.online/ShowModulePublish?modulePublishId=b284330b-5e0a-42e9-adae-d10f13cf4d3a"
-                        method="get">
-                        <button class="viewProject">🖕 image</button>
-                    </form>
+            </article>
+            <article class="pf-row" data-aos="fade-up" data-aos-duration="600">
+                <span class="pf-num">04</span>
+                <div class="pf-main">
+                    <div class="pf-top">
+                        <h3 class="pf-name">Mahjong Counter
+                            <a class="pf-link" href="https://mahjong-counter.onrender.com" target="_blank" aria-label="Visit Mahjong Counter">↗</a>
+                        </h3>
+                        <span class="pf-dates">2020</span>
+                    </div>
+                    <p class="pf-desc">Score-keeping web app for Mahjong that tracks 10 gameplay stats — money won/lost, streaks, highest win.</p>
+                    <div class="pf-tags">
+                        <span class="tag">HTML/CSS</span><span class="tag">JavaScript</span>
+                    </div>
                 </div>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-web">
-                <div class="content">
-                    <a target="_blank" href="https://cat-viewer.onrender.com/">
-                        <img src="./Images/Project Images/cats.png" alt="cats" style="width:100%"></a>
-                    <h4>Cat Viewer</h4>
-                    <p>Paginated images of cats!</p>
-                    <form target="_blank" style="display: inline" action="https://cat-viewer.onrender.com/"
-                        method="get">
-                        <button class="viewProject">Visit</button>
-                    </form>
-                </div>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-web">
-                <div class="content">
-                    <a target="_blank" href="https://movemate.onrender.com/">
-                        <img src="./Images/Project Images/movemate.png" alt="movemate" style="width:100%"></a>
-                    <h4>Movemate</h4>
-                    <p>Booking Website for Movemate</p>
-                    <form target="_blank" style="display: inline" action="https://movemate.onrender.com/" method="get">
-                        <button class="viewProject">Visit</button>
-                    </form>
-                </div>
-            </div>
-            <div data-aos="fade-left" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-java">
-                <div class="content">
-                    <a target="_blank" href="https://github.com/itstonylin/Connect-4"> <img
-                            src="./Images/Project Images/connect4.png" alt="connect 4" style="width:100%"></a>
-                    <h4>Connect 4</h4>
-                    <p>Play against your friends, play against AI, or watch 2 AI's battle it out!</p>
-                    <form target="_blank" style="display: inline" action="https://github.com/itstonylin/Connect-4"
-                        method="get">
-                        <button class="viewProject">Visit</button>
-                    </form>
-                </div>
-            </div>
-            <div data-aos="fade-left" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-python">
-                <div class="content">
-                    <a target="_blank" href="https://github.com/itstonylin/Tip.cc-Suite"> <img
-                            src="./Images/Project Images/tipcclogo.png" alt="tip.cc logo" style="width:100%"></a>
-                    <h4>Tip.cc Suite</h4>
-                    <p>A collection of programs designed to work with the tip.cc Discord cryptocurrency bot. This
-                        project contains 3 different programs: MissingCoins, Phrasedrops, and TipBals.</p>
-                    <form target="_blank" style="display: inline" action="https://github.com/itstonylin/TIp.cc-Suite"
-                        method="get">
-                        <button class="viewProject">Visit</button>
-                    </form>
-                </div>
-            </div>
-            <div data-aos="fade-left" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-web  sort-sort-">
-                <div class="content">
-                    <a target="_blank" href="https://colour-game.onrender.com"> <img
-                            src="./Images/Project Images/colourGame.jpg" alt="colour game" style="width:100%">
-                    </a>
-                    <h4>Colour Game</h4>
-                    <p>Choose the correct coloured box out of 8 that corresponds to the randomized rgb value.</p>
-                    <form target="_blank" style="display: inline" action="https://colour-game.onrender.com"
-                        method="get">
-                        <button class="viewProject">Visit</button>
-                    </form>
-                </div>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-web  ">
-                <div class="content">
-                    <a target="_blank" href="https://password-generator-nu2w.onrender.com"> <img
-                            src="./Images/Project Images/passwordGenerator.jpg" alt="password generator"
-                            style="width:100%"></a>
-                    <h4>Password Generator</h4>
-                    <p>Creates a randomly generated password that is between 4 and 100 characters long with the option
-                        to include lowercase letters, uppercase letters, numbers and symbols.
-                    </p>
-                    <form target="_blank" style="display: inline" action="https://password-generator-nu2w.onrender.com"
-                        method="get">
-                        <button class="viewProject">Visit</button>
-                    </form>
-
-                </div>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-web  ">
-                <div class="content">
-                    <a target="_blank" href="https://unit-converter-pn28.onrender.com"><img
-                            src="./Images/Project Images/unitConverter.jpg" alt="unit converter" style="width:100%"></a>
-                    <h4>Unit Converter</h4>
-                    <p>Converts numerical values between different units of measurement (Time, Length, Speed and Mass).
-                    </p>
-                    <form target="_blank" style="display: inline" action="https://unit-converter-pn28.onrender.com"
-                        method="get">
-                        <button class="viewProject">Visit</button>
-                    </form>
-                </div>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-java">
-                <div class="content">
-                    <a target="_blank" href="https://github.com/itstonylin/Nim"><img
-                            src="./Images/Project Images/Nim.jpg" alt="nim game" style="width:100%"></a>
-                    <h4>Nim Game</h4>
-                    <p>Nim is a game of strategy that uses sticks. There are four piles of sticks with four to eight
-                        randomly generated sticks in each pile. The person who picks up the last stick in the game
-                        loses.
-                    </p>
-                    <form target="_blank" style="display: inline" action="https://github.com/itstonylin/Nim"
-                        method="get">
-                        <button class="viewProject">Visit</button>
-                    </form>
-                </div>
-            </div>
-
-            <div data-aos="fade-left" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-java">
-                <div class="content">
-                    <a target="_blank" href="https://github.com/itstonylin/Day-Number-Calculator"><img
-                            src="./Images/Project Images/DayNumber.jpg" alt="day number calculator"
-                            style="width:100%"></a>
-                    </form>
-                    <h4>Day Number Calculator</h4>
-                    <p>Calculates the numerical day of the year based on the input of the year, month and day.
-                    </p>
-                </div>
-                <form target="_blank" style="display: inline"
-                    action="https://github.com/itstonylin/Day-Number-Calculator" method="get">
-                    <button class="viewProject">Visit</button>
-            </div>
-
-
-            <div data-aos="fade-left" data-aos-duration="750" data-aos-anchor-placement="top-bottom"
-                class="column sort-java sort-web sort-python ">
-                <div class="content">
-                    <a target="_blank" href="#"> <img src="" alt="" style="width:100%"></a>
-                    <h4>Under Construction</h4>
-                    <p>I am currently working on something and it'll be up when its done! For now check my other
-                        projects on this website or my <a href="https://linktr.ee/tonylin">linktree</a>.</p>
-                    <form target="_blank" style="display: inline" action="" method="get">
-                        <button class="viewProject">Visit</button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- TEMPLATE -->
-            <!-- <div data-aos="fade-right" data-aos-duration="750" class="column   ">
-                   <div class="content">
-                       <a target="_blank" href="#"> <img src="" alt="" style="width:100%"></a>
-                       <h4></h4>
-                       <p></p>
-                       <form target="_blank" style="display: inline" action="" method="get">
-                           <button class="viewProject">Visit</button>
-                       </form>
-                   </div>
-               </div> -->
-
-            <!-- END GRID -->
+            </article>
         </div>
-        <!-- END MAIN -->
-    </div>
+    </section>
 
 
 
