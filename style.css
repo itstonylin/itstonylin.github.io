@@ -218,7 +218,7 @@
         float: left;
         font-size: 1.3rem;
         margin: 0;
-        text-transform: uppercase;
+        text-transform: none;
         font-weight: 700;
         color: white;
     }
@@ -739,6 +739,25 @@
 @media only screen and (max-width: 600px) {
     .xp-body {
         padding-left: 0;
+    }
+    /* Stack Title -> Company -> Dates so layout is consistent regardless of date length */
+    .xp-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .xp-top {
+        display: contents;
+    }
+    .xp-company {
+        order: 1;
+    }
+    .xp-role {
+        order: 2;
+    }
+    .xp-dates {
+        order: 3;
+        white-space: normal;
+        margin-top: 4px;
     }
 }
     /* -------------------------------------------- */
