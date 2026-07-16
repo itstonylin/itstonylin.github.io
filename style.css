@@ -766,6 +766,14 @@
         border-radius: 999px;
         padding: 3px 10px;
         margin-left: 8px;
+        text-decoration: none;
+        transition: background 0.15s linear;
+    }
+
+    a.pf-badge:hover {
+        background: #fde68a;
+        color: #92400e;
+        text-decoration: none;
     }
 
     .pf-dates {
