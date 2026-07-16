@@ -12,63 +12,27 @@ window.addEventListener("load", function() {
 });
 // ===================================================================
 
-// Portfolio
+// Experience filter + accordion
 // ===================================================================
-
-filterSelection("all");
-
-function filterSelection(c) {
-    let x, i;
-    x = document.getElementsByClassName("column");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-        removeClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
-    }
-}
-
-function addClass(element, name) {
-    let i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-        }
-    }
-}
-
-function removeClass(element, name) {
-    let i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-        }
-    }
-    element.className = arr1.join(" ");
-}
-
-/* Add the active class to the button passed in */
-function setThisButtonActive(button) {
-    button.classList.add("portfolio-buttons-active");
-}
-
-/* select all active buttons, and remove the active class from them */
-function resetActiveButton() {
-    document.querySelectorAll(".portfolio-buttons-active").forEach((button) => {
-        button.classList.remove("portfolio-buttons-active");
-    });
-}
-
-document.querySelectorAll(".portfolio-buttons").forEach((button) => {
-    button.addEventListener("click", function() {
-        resetActiveButton();
-        setThisButtonActive(button);
+document.querySelectorAll(".pill").forEach((pill) => {
+    pill.addEventListener("click", function() {
+        document.querySelectorAll(".pill").forEach((p) => p.classList.remove("pill-active"));
+        pill.classList.add("pill-active");
+        const filter = pill.dataset.filter;
+        document.querySelectorAll(".xp-row").forEach((row) => {
+            row.style.display =
+                filter === "all" || row.dataset.category === filter ? "" : "none";
+        });
     });
 });
 
+document.querySelectorAll(".xp-head").forEach((head) => {
+    head.addEventListener("click", function() {
+        const row = head.closest(".xp-row");
+        row.classList.toggle("open");
+        head.setAttribute("aria-expanded", row.classList.contains("open"));
+    });
+});
 // ===================================================================
 
 // Nav Bar
