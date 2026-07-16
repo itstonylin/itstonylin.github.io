@@ -700,25 +700,31 @@
     /* Resume Styles */
     /* -------------------------------------------- */
     
-    #resume-container {
-        width: 100%;
-        margin-bottom: 5em;
-        text-align: center;
-    }
-    
-    #resume {
-        margin-bottom: 1em;
-        padding-top: 1em;
-    }
-    
     #resume-container .resume-inner-container {
         overflow-y: hidden;
         overflow-x: auto;
+        border: 1px solid var(--gray-2);
+        border-radius: 12px;
     }
-    
-    #resume-container img {
-        width: auto;
-        height: auto;
+
+    #resume-download {
+        display: inline-block;
+        font-family: var(--font-body);
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--paper);
+        background: var(--accent);
+        border-radius: 8px;
+        padding: 10px 22px;
+        margin: 1.25rem 0 3rem;
+        text-decoration: none;
+        transition: background 0.15s linear;
+    }
+
+    #resume-download:hover {
+        background: var(--ink);
+        color: var(--paper);
+        text-decoration: none;
     }
     /* -------------------------------------------- */
     /* Footer Styles */
@@ -733,8 +739,8 @@
     
     footer p {
         text-align: center;
-        font-size: 2em;
-        font-family: 'Rubik', sans-serif;
+        font-size: 1.1rem;
+        font-family: var(--font-body);
     }
     
     #social-media-row-footer {
