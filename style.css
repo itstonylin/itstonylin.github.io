@@ -593,7 +593,7 @@
 }
 
 .xp-head:hover::after,
-.pf-head:hover::after {
+.pf-head:hover:not(:has(a:hover))::after {
     border-color: var(--accent);
     color: var(--accent);
 }
