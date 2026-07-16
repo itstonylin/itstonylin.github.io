@@ -561,6 +561,25 @@
     color: var(--gray-3);
 }
 
+.xp-head::after {
+    content: "\2212";
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: var(--gray-3);
+    align-self: center;
+    transition: color 0.15s linear;
+}
+
+.xp-row:not(.open) .xp-head::after {
+    content: "+";
+}
+
+.xp-head:hover::after {
+    color: var(--accent);
+}
+
 .xp-main {
     flex: 1;
 }
