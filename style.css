@@ -90,7 +90,7 @@
     .spinner-wrapper {
         width: 100%;
         height: 100%;
-        background-color: #151515;
+        background-color: var(--paper);
         position: absolute;
         top: 0;
         left: 0;
@@ -117,14 +117,14 @@
     .spinner:before {
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(90deg, #ff00cc 0%, #333399 100%);
+        background-image: linear-gradient(90deg, var(--accent) 0%, #93c5fd 100%);
         animation: spin 0.5s infinite linear;
     }
-    
+
     .spinner:after {
         width: 90%;
         height: 90%;
-        background-color: #151515;
+        background-color: var(--paper);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -908,27 +908,21 @@ footer {
     margin: 0 0 1.5rem;
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 1.75rem;
 }
 
 #social-media-row-footer a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
-    border: 1px solid #333333;
-    border-radius: 999px;
     color: var(--paper);
-    font-size: 1.1rem;
+    font-size: 1.9rem;
     text-decoration: none;
-    transition: all 0.15s linear;
+    transition: color 0.15s linear;
 }
 
 #social-media-row-footer a:hover {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: var(--paper);
+    color: var(--accent);
 }
 
 .footer-copy {
