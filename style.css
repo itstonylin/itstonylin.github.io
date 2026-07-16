@@ -648,15 +648,23 @@
 }
 
 .xp-body {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
     padding-left: 2.55rem;
 }
 
 .xp-row.open .xp-body {
-    max-height: 500px;
-    padding-bottom: 1.25rem;
+    grid-template-rows: 1fr;
+}
+
+.body-inner {
+    overflow: hidden;
+    min-height: 0;
+}
+
+.xp-body .body-inner > :last-child {
+    margin-bottom: 1.25rem;
 }
 
 .xp-desc {
@@ -723,15 +731,18 @@
     }
 
     .pf-body {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.3s ease;
         padding-left: 2.55rem;
     }
 
     .pf-row.open .pf-body {
-        max-height: 500px;
-        padding-bottom: 1.5rem;
+        grid-template-rows: 1fr;
+    }
+
+    .pf-body .body-inner > :last-child {
+        margin-bottom: 1.5rem;
     }
 
     .pf-name {
