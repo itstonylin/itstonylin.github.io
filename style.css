@@ -382,46 +382,41 @@
     }
     
     #hero-image-first {
-        background-image: url("Images/Hero_Images/ggbridge.JPG");
-        background-position: 75% 50%;
-    }
-    
-    #hero-image-second {
-        background-image: url("Images/Hero_Images/pose_on_soccerball.JPG");
-        background-position: center;
-    }
-    
-    #hero-image-third {
-        background-image: url("Images/Hero_Images/pose_on_tarp.jpg");
-        background-position: 70% 55%;
-    }
-
-    #hero-image-fourth {
-        background-image: url("Images/Hero_Images/onBikeInTrail.JPG");
-        background-position: 50% 80%;
-    }
-
-    #hero-image-fifth {
-        background-image: url("Images/Hero_Images/vancouver.jpg");
-        background-position: center;
-    }
-
-    #hero-image-sixth {
-        background-image: url("Images/Hero_Images/mt_fuji.jpg");
-        background-position: center;
-    }
-
-    #hero-image-seventh {
         background-image: url("Images/Hero_Images/ha_giang.jpg");
         background-position: center;
     }
 
-    #hero-image-eighth {
+    #hero-image-second {
+        background-image: url("Images/Hero_Images/ggbridge.JPG");
+        background-position: 75% 50%;
+    }
+
+    #hero-image-third {
+        background-image: url("Images/Hero_Images/vancouver.jpg");
+        background-position: center;
+    }
+
+    #hero-image-fourth {
+        background-image: url("Images/Hero_Images/pose_on_soccerball.JPG");
+        background-position: center;
+    }
+
+    #hero-image-fifth {
+        background-image: url("Images/Hero_Images/mt_fuji.jpg");
+        background-position: center;
+    }
+
+    #hero-image-sixth {
+        background-image: url("Images/Hero_Images/onBikeInTrail.JPG");
+        background-position: 50% 80%;
+    }
+
+    #hero-image-seventh {
         background-image: url("Images/Hero_Images/ha_long_bay.jpg");
         background-position: center;
     }
 
-    #hero-image-ninth {
+    #hero-image-eighth {
         background-image: url("Images/Hero_Images/chiang_mai.jpg");
         background-position: center;
     }
