@@ -37,6 +37,20 @@ function toggleRow(head) {
     head.setAttribute("aria-expanded", row.classList.contains("open"));
 }
 
+document.querySelectorAll(".expand-toggle").forEach((btn) => {
+    btn.addEventListener("click", function() {
+        const container = document.getElementById(btn.dataset.target);
+        const expand = btn.getAttribute("aria-expanded") !== "true";
+        container.querySelectorAll(".xp-row, .pf-row").forEach((row) => {
+            row.classList.toggle("open", expand);
+            const head = row.querySelector(".xp-head, .pf-head");
+            if (head) head.setAttribute("aria-expanded", expand);
+        });
+        btn.setAttribute("aria-expanded", expand);
+        btn.textContent = expand ? "Collapse all" : "Expand all";
+    });
+});
+
 document.querySelectorAll(".xp-head, .pf-head").forEach((head) => {
     head.addEventListener("click", function(event) {
         if (event.target.closest("a")) return; // let project title links navigate
@@ -57,5 +71,11 @@ document.querySelectorAll(".xp-head, .pf-head").forEach((head) => {
 $(".menu-toggle").click(function() {
     $(".site-nav").toggleClass("site-nav--open", 500);
     $(this).toggleClass("open");
+});
+
+// Close the hamburger menu after selecting a nav link
+$(".site-nav a").click(function() {
+    $(".site-nav").removeClass("site-nav--open");
+    $(".menu-toggle").removeClass("open");
 });
 // ===================================================================

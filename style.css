@@ -204,7 +204,7 @@
     header {
         background: black;
         color: #ebebd3;
-        padding: 1em 0;
+        padding: 1.35em 0;
         position: relative;
     }
     
@@ -216,13 +216,13 @@
     
     .logo {
         float: left;
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin: 0;
         text-transform: uppercase;
         font-weight: 700;
         color: white;
     }
-    
+
     .logo span {
         font-weight: 400;
     }
@@ -256,7 +256,7 @@
     }
     
     .site-nav a {
-        color: #ebebd3;
+        color: white;
         display: block;
         padding: 1.5em 4em 1.5em 1.5em;
         text-transform: uppercase;
@@ -275,14 +275,17 @@
         margin-right: 1em;
         width: 1.1em;
         text-align: right;
-        color: #0099ff;
+        color: var(--accent);
     }
     
     .menu-toggle {
-        padding: 1em;
+        padding: 0 1em;
         position: absolute;
-        top: 0.5em;
+        top: 0;
+        bottom: 0;
         right: 0.5em;
+        display: flex;
+        align-items: center;
         cursor: pointer;
     }
     
@@ -291,19 +294,19 @@
     .hamburger::after {
         content: "";
         display: block;
-        background: #ebebd3;
+        background: white;
         height: 3px;
-        width: 1.75em;
+        width: 2.1em;
         border-radius: 3px;
         transition: all ease-in-out 500ms;
     }
-    
+
     .hamburger::before {
-        transform: translateY(-6px);
+        transform: translateY(-8px);
     }
-    
+
     .hamburger::after {
-        transform: translateY(3px);
+        transform: translateY(5px);
     }
     
     .open .hamburger {
@@ -315,7 +318,7 @@
     }
     
     .open .hamburger::after {
-        transform: translateY(-3px) rotate(-90deg);
+        transform: translateY(-5px) rotate(-90deg);
     }
     
     @media (min-width: 1235px) {
@@ -436,6 +439,11 @@
         text-decoration: none;
         color: white;
     }
+
+    .hero-name {
+        color: var(--accent);
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+    }
     
     #social-media-row {
         position: absolute;
@@ -515,7 +523,42 @@
 /* -------------------------------------------- */
 
 #experience-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
     margin-bottom: 1.5rem;
+}
+
+.section-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+.expand-toggle {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--gray-5);
+    background: var(--paper);
+    border: 1px solid var(--gray-2);
+    border-radius: 999px;
+    padding: 6px 18px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s linear;
+}
+
+.expand-toggle:hover {
+    border-color: var(--ink);
+    color: var(--ink);
+}
+
+.expand-toggle:focus,
+.expand-toggle:focus-visible {
+    outline: none;
 }
 
 .pill {
@@ -612,7 +655,7 @@
 .xp-top {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
 }
@@ -641,10 +684,10 @@
 .xp-role {
     display: block;
     font-family: var(--font-body);
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: var(--accent);
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 .xp-body {
@@ -767,8 +810,12 @@
     }
 
     .pf-arrow {
+        display: inline-block;
+        width: 1.1em;
+        height: auto;
+        margin-left: 0.15em;
         color: var(--accent);
-        font-size: 0.8em;
+        vertical-align: -0.05em;
     }
 
     .pf-badge {
@@ -805,6 +852,18 @@
     @media only screen and (max-width: 600px) {
         .pf-body {
             padding-left: 0;
+        }
+        .pf-top {
+            flex-wrap: nowrap;
+            align-items: flex-start;
+        }
+        .pf-name {
+            flex: 1;
+            min-width: 0;
+        }
+        .pf-dates {
+            flex-shrink: 0;
+            padding-top: 0.35rem;
         }
     }
 

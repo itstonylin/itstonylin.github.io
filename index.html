@@ -115,7 +115,7 @@
             </div>
             <div id="home-text">
                 <h2 class="animate__animated animate__backInDown hero_text">Hello,</h2>
-                <h1 class="animate__animated animate__lightSpeedInLeft animate__delay-1s hero_text">I'm Tony Lin</h1>
+                <h1 class="animate__animated animate__lightSpeedInLeft animate__delay-1s hero_text">I'm <span class="hero-name">Tony Lin</span></h1>
                 <h2 class="animate__animated animate__backInUp animate__delay-2s hero_text">Nice To Meet You!</h2>
             </div>
             <div id="home-hero-image"></div>
@@ -164,20 +164,23 @@
     <section id="experience" class="section">
         <h2 class="section-title">Experience</h2>
         <div id="experience-filters">
-            <button class="pill" data-filter="all">All</button>
-            <button class="pill pill-active" data-filter="software">Software</button>
-            <button class="pill" data-filter="teaching">Teaching</button>
+            <div class="filter-pills">
+                <button class="pill" data-filter="all">All</button>
+                <button class="pill pill-active" data-filter="software">Software</button>
+                <button class="pill" data-filter="teaching">Teaching</button>
+            </div>
+            <button class="expand-toggle" data-target="experience-rows" aria-expanded="false">Expand all</button>
         </div>
         <div id="experience-rows">
-            <article class="xp-row open" data-category="software">
-                <button class="xp-head" aria-expanded="true">
+            <article class="xp-row" data-category="software">
+                <button class="xp-head" aria-expanded="false">
                     <span class="xp-num">01</span>
                     <span class="xp-main">
                         <span class="xp-top">
-                            <span class="xp-company">Backyard Brands</span>
+                            <span class="xp-company">Lead Software Engineer</span>
                             <span class="xp-dates">Jun 2025 - Present</span>
                         </span>
-                        <span class="xp-role">Lead Software Engineer</span>
+                        <span class="xp-role">Backyard Brands</span>
                     </span>
                 </button>
                 <div class="xp-body">
@@ -193,20 +196,20 @@
                     </div>
                 </div>
             </article>
-            <article class="xp-row open" data-category="teaching">
-                <button class="xp-head" aria-expanded="true">
+            <article class="xp-row" data-category="teaching">
+                <button class="xp-head" aria-expanded="false">
                     <span class="xp-num">02</span>
                     <span class="xp-main">
                         <span class="xp-top">
-                            <span class="xp-company">COMPSCI 1XC3</span>
-                            <span class="xp-dates">Winter '25, '26</span>
+                            <span class="xp-company">Teaching Assistant, COMPSCI 1XC3</span>
+                            <span class="xp-dates">Jan - Apr 2025, Jan - Apr 2026</span>
                         </span>
-                        <span class="xp-role">Teaching Assistant, McMaster University</span>
+                        <span class="xp-role">McMaster University</span>
                     </span>
                 </button>
                 <div class="xp-body">
                     <div class="body-inner">
-                    <p class="xp-desc"><strong>Course:</strong> Computer Science Practice and Experience: Development Basics (1XC3)</p>
+                    <p class="xp-desc"><strong>Course:</strong> Computer Science Practice and Experience: Development Basics (COMPSCI 1XC3)</p>
                     <ul>
                         <li>Taught C programming (pointers, dynamic memory, structs, file I/O), the Unix/Linux command line, shell scripting, and Git version control.</li>
                     </ul>
@@ -216,20 +219,20 @@
                     </div>
                 </div>
             </article>
-            <article class="xp-row open" data-category="teaching">
-                <button class="xp-head" aria-expanded="true">
+            <article class="xp-row" data-category="teaching">
+                <button class="xp-head" aria-expanded="false">
                     <span class="xp-num">03</span>
                     <span class="xp-main">
                         <span class="xp-top">
-                            <span class="xp-company">COMPSCI 2ME3</span>
-                            <span class="xp-dates">Fall '23, '24, '25</span>
+                            <span class="xp-company">Teaching Assistant, COMPSCI 2ME3</span>
+                            <span class="xp-dates">Sep - Dec 2023, Sep - Dec 2024, Sep - Dec 2025</span>
                         </span>
-                        <span class="xp-role">Teaching Assistant, McMaster University</span>
+                        <span class="xp-role">McMaster University</span>
                     </span>
                 </button>
                 <div class="xp-body">
                     <div class="body-inner">
-                    <p class="xp-desc"><strong>Course:</strong> Introduction to Software Development (2ME3)</p>
+                    <p class="xp-desc"><strong>Course:</strong> Introduction to Software Development (COMPSCI 2ME3)</p>
                     <ul>
                         <li>Taught object-oriented design patterns, interface specifications, class invariants, UML modelling, requirements documentation, and software development models.</li>
                     </ul>
@@ -239,20 +242,20 @@
                     </div>
                 </div>
             </article>
-            <article class="xp-row open" data-category="teaching">
-                <button class="xp-head" aria-expanded="true">
+            <article class="xp-row" data-category="teaching">
+                <button class="xp-head" aria-expanded="false">
                     <span class="xp-num">04</span>
                     <span class="xp-main">
                         <span class="xp-top">
-                            <span class="xp-company">SFWRENG 2OP3</span>
-                            <span class="xp-dates">Fall '25</span>
+                            <span class="xp-company">Teaching Assistant, SFWRENG 2OP3</span>
+                            <span class="xp-dates">Sep - Dec 2025</span>
                         </span>
-                        <span class="xp-role">Teaching Assistant, McMaster University</span>
+                        <span class="xp-role">McMaster University</span>
                     </span>
                 </button>
                 <div class="xp-body">
                     <div class="body-inner">
-                    <p class="xp-desc"><strong>Course:</strong> Object-Oriented Programming (2OP3)</p>
+                    <p class="xp-desc"><strong>Course:</strong> Object-Oriented Programming (SFWRENG 2OP3)</p>
                     <ul>
                         <li>Taught classes, interfaces, inheritance, polymorphism, generics, closures, exception handling, and design by contract.</li>
                     </ul>
@@ -262,15 +265,15 @@
                     </div>
                 </div>
             </article>
-            <article class="xp-row open" data-category="software">
-                <button class="xp-head" aria-expanded="true">
+            <article class="xp-row" data-category="software">
+                <button class="xp-head" aria-expanded="false">
                     <span class="xp-num">05</span>
                     <span class="xp-main">
                         <span class="xp-top">
-                            <span class="xp-company">Stelco</span>
-                            <span class="xp-dates">Jan 2024 - Dec 2024</span>
+                            <span class="xp-company">Process Automation Engineer</span>
+                            <span class="xp-dates">Jan - Dec 2024</span>
                         </span>
-                        <span class="xp-role">Process Automation Engineer</span>
+                        <span class="xp-role">Stelco</span>
                     </span>
                 </button>
                 <div class="xp-body">
@@ -286,20 +289,19 @@
                     </div>
                 </div>
             </article>
-            <article class="xp-row open" data-category="software">
-                <button class="xp-head" aria-expanded="true">
+            <article class="xp-row" data-category="software">
+                <button class="xp-head" aria-expanded="false">
                     <span class="xp-num">06</span>
                     <span class="xp-main">
                         <span class="xp-top">
-                            <span class="xp-company">Tech Mahindra</span>
-                            <span class="xp-dates">Summers 2022 &amp; 2023</span>
+                            <span class="xp-company">Software Engineer</span>
+                            <span class="xp-dates">May - Aug 2022, May - Aug 2023</span>
                         </span>
-                        <span class="xp-role">Software Engineer</span>
+                        <span class="xp-role">Tech Mahindra</span>
                     </span>
                 </button>
                 <div class="xp-body">
                     <div class="body-inner">
-                    <p class="xp-desc"><strong>Dates:</strong> May - Aug 2022, May - Aug 2023</p>
                     <ul>
                         <li>Built a Java plugin generating JUnit test scaffolding for Spring Boot APIs, accelerating test development.</li>
                         <li>Normalized Oracle SQL schemas, eliminating redundant data and cutting storage footprint by 10%.</li>
@@ -318,9 +320,12 @@
 
     <section id="portfolio" class="section">
         <h2 class="section-title">Portfolio</h2>
+        <div class="section-controls">
+            <button class="expand-toggle" data-target="portfolio-rows" aria-expanded="false">Expand all</button>
+        </div>
         <div id="portfolio-rows">
-            <article class="pf-row open">
-                <div class="pf-head" role="button" tabindex="0" aria-expanded="true">
+            <article class="pf-row">
+                <div class="pf-head" role="button" tabindex="0" aria-expanded="false">
                     <span class="pf-num">01</span>
                     <div class="pf-top">
                         <h3 class="pf-name">ApptVia
@@ -340,14 +345,14 @@
                     </div>
                 </div>
             </article>
-            <article class="pf-row open">
-                <div class="pf-head" role="button" tabindex="0" aria-expanded="true">
+            <article class="pf-row">
+                <div class="pf-head" role="button" tabindex="0" aria-expanded="false">
                     <span class="pf-num">02</span>
                     <div class="pf-top">
                         <h3 class="pf-name">
                             <!-- Self-hosted backup: Papers/coping-gacha-gi2026-abstract.pdf -->
-                            <a class="pf-link" href="https://cs.uwaterloo.ca/~dvogel/gi2026/posters/1004c.pdf" target="_blank" aria-label="Read the Coping-Gacha GI 2026 extended abstract">Coping-Gacha <span class="pf-arrow">↗</span></a>
-                            <span class="pf-badge">Published at GI 2026</span>
+                            <a class="pf-link" href="https://cs.uwaterloo.ca/~dvogel/gi2026/posters/1004c.pdf" target="_blank" aria-label="Read the Coping-Gacha GI 2026 extended abstract">Coping-Gacha <svg class="pf-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 L18 6 M9 6 L18 6 L18 15" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <span class="pf-badge">Published at Graphics Interface (GI) 2026</span>
                         </h3>
                         <span class="pf-dates">2026</span>
                     </div>
@@ -361,8 +366,8 @@
                     </div>
                 </div>
             </article>
-            <article class="pf-row open">
-                <div class="pf-head" role="button" tabindex="0" aria-expanded="true">
+            <article class="pf-row">
+                <div class="pf-head" role="button" tabindex="0" aria-expanded="false">
                     <span class="pf-num">03</span>
                     <div class="pf-top">
                         <h3 class="pf-name">Peerio
@@ -380,12 +385,12 @@
                     </div>
                 </div>
             </article>
-            <article class="pf-row open">
-                <div class="pf-head" role="button" tabindex="0" aria-expanded="true">
+            <article class="pf-row">
+                <div class="pf-head" role="button" tabindex="0" aria-expanded="false">
                     <span class="pf-num">04</span>
                     <div class="pf-top">
                         <h3 class="pf-name">
-                            <a class="pf-link" href="https://mahjong-counter.onrender.com" target="_blank" aria-label="Visit Mahjong Counter">Mahjong Counter <span class="pf-arrow">↗</span></a>
+                            <a class="pf-link" href="https://mahjong-counter.onrender.com" target="_blank" aria-label="Visit Mahjong Counter">Mahjong Counter <svg class="pf-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 L18 6 M9 6 L18 6 L18 15" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                         </h3>
                         <span class="pf-dates">2020</span>
                     </div>
