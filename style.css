@@ -521,14 +521,10 @@
 }
 
 .pill:focus,
-.xp-head:focus {
-    outline: none;
-}
-
 .pill:focus-visible,
+.xp-head:focus,
 .xp-head:focus-visible {
-    outline: 2px solid var(--gray-3);
-    outline-offset: 3px;
+    outline: none;
 }
 
 .pill-active,
@@ -563,13 +559,20 @@
 
 .xp-head::after {
     content: "\2212";
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 1.4rem;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border: 1px solid var(--gray-2);
+    border-radius: 50%;
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 1.1rem;
     line-height: 1;
-    color: var(--gray-3);
+    color: var(--gray-4);
     align-self: center;
-    transition: color 0.15s linear;
+    transition: border-color 0.15s linear, color 0.15s linear;
 }
 
 .xp-row:not(.open) .xp-head::after {
@@ -577,6 +580,7 @@
 }
 
 .xp-head:hover::after {
+    border-color: var(--accent);
     color: var(--accent);
 }
 
