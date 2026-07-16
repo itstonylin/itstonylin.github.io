@@ -164,8 +164,8 @@
     <section id="experience" class="section">
         <h2 class="section-title">Experience</h2>
         <div id="experience-filters">
-            <button class="pill pill-active" data-filter="all">All</button>
-            <button class="pill" data-filter="software">Software</button>
+            <button class="pill" data-filter="all">All</button>
+            <button class="pill pill-active" data-filter="software">Software</button>
             <button class="pill" data-filter="teaching">Teaching</button>
         </div>
         <div id="experience-rows">
@@ -225,6 +225,7 @@
                     </span>
                 </button>
                 <div class="xp-body">
+                    <p class="xp-desc"><strong>Dates:</strong> May - Aug 2022, May - Aug 2023</p>
                     <ul>
                         <li>Built a Java plugin generating JUnit test scaffolding for Spring Boot APIs, accelerating test development.</li>
                         <li>Normalized Oracle SQL schemas, eliminating redundant data and cutting storage footprint by 10%.</li>
@@ -248,6 +249,7 @@
                 </button>
                 <div class="xp-body">
                     <p class="xp-desc"><strong>Course:</strong> Computer Science Practice and Experience: Development Basics (1XC3)</p>
+                    <p class="xp-desc"><strong>Terms:</strong> Jan - Apr 2025, Jan - Apr 2026</p>
                     <ul>
                         <li>Helped students learn C programming: pointers, dynamic memory, structs, and file I/O.</li>
                         <li>Taught Unix/Linux command line skills, shell scripting, pipes and filters, and Git version control.</li>
@@ -271,10 +273,10 @@
                 </button>
                 <div class="xp-body">
                     <p class="xp-desc"><strong>Course:</strong> Introduction to Software Development (2ME3)</p>
+                    <p class="xp-desc"><strong>Terms:</strong> Sep - Dec 2023, Sep - Dec 2024, Sep - Dec 2025</p>
                     <ul>
                         <li>Helped students learn object-oriented design patterns, interface specifications, class invariants, and exception handling.</li>
                         <li>Taught requirements documentation, UML modelling, testing, and software development models.</li>
-                        <li>Three fall terms supporting and grading cohorts of 180+ students.</li>
                     </ul>
                     <div class="xp-tags">
                         <span class="tag">Teaching</span><span class="tag">UML</span><span class="tag">Software Design</span>
@@ -311,9 +313,9 @@
     <section id="portfolio" class="section">
         <h2 class="section-title">Portfolio</h2>
         <div id="portfolio-rows">
-            <article class="pf-row">
-                <span class="pf-num">01</span>
-                <div class="pf-main">
+            <article class="pf-row open">
+                <div class="pf-head" role="button" tabindex="0" aria-expanded="true">
+                    <span class="pf-num">01</span>
                     <div class="pf-top">
                         <h3 class="pf-name">ApptVia
                             <!-- To publish a link: set href, remove `hidden`, and move the
@@ -322,15 +324,17 @@
                         </h3>
                         <span class="pf-dates">2026 - now</span>
                     </div>
+                </div>
+                <div class="pf-body">
                     <p class="pf-desc">AI-powered scheduling platform for service businesses: online booking, payments, notifications, and a multi-channel scheduling agent.</p>
                     <div class="pf-tags">
                         <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">PostgreSQL</span><span class="tag">OpenAI</span><span class="tag">Stripe</span><span class="tag">Twilio</span>
                     </div>
                 </div>
             </article>
-            <article class="pf-row">
-                <span class="pf-num">02</span>
-                <div class="pf-main">
+            <article class="pf-row open">
+                <div class="pf-head" role="button" tabindex="0" aria-expanded="true">
+                    <span class="pf-num">02</span>
                     <div class="pf-top">
                         <h3 class="pf-name">Coping-Gacha
                             <a class="pf-link" href="" hidden target="_blank" aria-label="Visit Coping-Gacha">↗</a>
@@ -338,36 +342,42 @@
                         </h3>
                         <span class="pf-dates">2026</span>
                     </div>
+                </div>
+                <div class="pf-body">
                     <p class="pf-desc">Therapeutic app with 10 AI personalities and cross-conversation memory, published as a Graphics Interface 2026 extended abstract and poster.</p>
                     <div class="pf-tags">
                         <span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">Claude</span><span class="tag">Supabase</span>
                     </div>
                 </div>
             </article>
-            <article class="pf-row">
-                <span class="pf-num">03</span>
-                <div class="pf-main">
+            <article class="pf-row open">
+                <div class="pf-head" role="button" tabindex="0" aria-expanded="true">
+                    <span class="pf-num">03</span>
                     <div class="pf-top">
                         <h3 class="pf-name">Peerio
                             <a class="pf-link" href="" hidden target="_blank" aria-label="Visit Peerio">↗</a>
                         </h3>
                         <span class="pf-dates">2025 - 2026</span>
                     </div>
+                </div>
+                <div class="pf-body">
                     <p class="pf-desc">Tinder-style two-way matching between people seeking project experience and project creators, built on a hybrid matching engine with semantic similarity and Elo ranking.</p>
                     <div class="pf-tags">
                         <span class="tag">React Native</span><span class="tag">Python</span><span class="tag">Supabase</span><span class="tag">Railway</span>
                     </div>
                 </div>
             </article>
-            <article class="pf-row">
-                <span class="pf-num">04</span>
-                <div class="pf-main">
+            <article class="pf-row open">
+                <div class="pf-head" role="button" tabindex="0" aria-expanded="true">
+                    <span class="pf-num">04</span>
                     <div class="pf-top">
                         <h3 class="pf-name">
                             <a class="pf-link" href="https://mahjong-counter.onrender.com" target="_blank" aria-label="Visit Mahjong Counter">Mahjong Counter <span class="pf-arrow">↗</span></a>
                         </h3>
                         <span class="pf-dates">2020</span>
                     </div>
+                </div>
+                <div class="pf-body">
                     <p class="pf-desc">Score-keeping web app for Mahjong that tracks 10 gameplay stats: money won/lost, streaks, highest win.</p>
                     <div class="pf-tags">
                         <span class="tag">HTML/CSS</span><span class="tag">JavaScript</span>

@@ -12,25 +12,42 @@ window.addEventListener("load", function() {
 });
 // ===================================================================
 
-// Experience filter + accordion
+// Experience filter + accordions
 // ===================================================================
+function applyFilter(filter) {
+    document.querySelectorAll(".xp-row").forEach((row) => {
+        row.style.display =
+            filter === "all" || row.dataset.category === filter ? "" : "none";
+    });
+}
+
 document.querySelectorAll(".pill").forEach((pill) => {
     pill.addEventListener("click", function() {
         document.querySelectorAll(".pill").forEach((p) => p.classList.remove("pill-active"));
         pill.classList.add("pill-active");
-        const filter = pill.dataset.filter;
-        document.querySelectorAll(".xp-row").forEach((row) => {
-            row.style.display =
-                filter === "all" || row.dataset.category === filter ? "" : "none";
-        });
+        applyFilter(pill.dataset.filter);
     });
 });
 
-document.querySelectorAll(".xp-head").forEach((head) => {
-    head.addEventListener("click", function() {
-        const row = head.closest(".xp-row");
-        row.classList.toggle("open");
-        head.setAttribute("aria-expanded", row.classList.contains("open"));
+applyFilter(document.querySelector(".pill-active").dataset.filter);
+
+function toggleRow(head) {
+    const row = head.closest(".xp-row, .pf-row");
+    row.classList.toggle("open");
+    head.setAttribute("aria-expanded", row.classList.contains("open"));
+}
+
+document.querySelectorAll(".xp-head, .pf-head").forEach((head) => {
+    head.addEventListener("click", function(event) {
+        if (event.target.closest("a")) return; // let project title links navigate
+        toggleRow(head);
+    });
+    if (head.tagName === "BUTTON") return; // buttons already toggle via click on Enter/Space
+    head.addEventListener("keydown", function(event) {
+        if (event.key !== "Enter" && event.key !== " ") return;
+        if (event.target.closest("a")) return;
+        event.preventDefault();
+        toggleRow(head);
     });
 });
 // ===================================================================
