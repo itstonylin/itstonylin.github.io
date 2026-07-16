@@ -40,12 +40,13 @@
         font-family: var(--font-display);
         font-weight: 900;
         font-size: 4.5em;
-        letter-spacing: -0.02em;
+        letter-spacing: -0.04em;
     }
 
     #home-text h2 {
-        font-family: var(--font-body);
-        font-weight: 500;
+        font-family: var(--font-display);
+        font-weight: 800;
+        letter-spacing: -0.03em;
         text-decoration: none;
     }
 
@@ -166,11 +167,11 @@
         margin: 0;
         width: 100%;
         z-index: 999;
-        font-family: var(--font-body);
-        font-weight: 600;
-        font-size: 1.05em;
+        font-family: var(--font-display);
+        font-weight: 800;
+        font-size: 1.1em;
         height: 1.4em;
-        letter-spacing: 0.02em;
+        letter-spacing: -0.01em;
     }
     
     @media only screen and (orientation: landscape) and (max-width: 800px) {
@@ -509,6 +510,17 @@
 
 .pill:hover {
     border-color: var(--ink);
+}
+
+.pill:focus,
+.xp-head:focus {
+    outline: none;
+}
+
+.pill:focus-visible,
+.xp-head:focus-visible {
+    outline: 2px solid var(--gray-3);
+    outline-offset: 3px;
 }
 
 .pill-active,
