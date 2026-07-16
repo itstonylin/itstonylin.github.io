@@ -73,7 +73,16 @@ Executed 2026-07-16 on branch `revamp/swiss-modern` via subagent-driven developm
 - To publish a link on ApptVia/Coping-Gacha/Peerio: in their `.pf-link` anchor, set `href` and remove the `hidden` attribute.
 - Experience filter/accordion JS lives in `main.js` (`.pill` filter by `data-category`, `.xp-head` toggles `.open`).
 - Resume PDF is generated from `~/Documents/Resumes/resume.tex` (pdflatex ×2) and copied to `Resume/Tony's Resume.pdf` — same filename, HTML unchanged.
-- Known cosmetic debt (shippable, fix opportunistically): style.css mixed indentation, accordion `max-height: 500px` could clip at ~320px widths, collapsed accordion bodies aren't aria-hidden.
+- Known cosmetic debt (shippable, fix opportunistically): style.css mixed indentation, collapsed accordion bodies aren't aria-hidden.
+
+Post-review iteration rounds (same day, ~25 commits of user feedback):
+
+- Hero: 5 travel photos added to carousel (resized via sips to ~2000px max), 3 old slides removed, Vancouver first, old/new interleaved; hero text border removed; About photo swapped to Mt. Fuji shot.
+- Experience: rows open by default with circular +/- indicators (grid `0fr↔1fr` animation replaced the janky max-height trick; content wrapped in `.body-inner`); Software is the default filter; all rows ordered reverse-chronologically by end date; TA bullets rewritten from official McMaster calendar topics; multi-term rows show real month ranges (Fall=Sep-Dec, Winter=Jan-Apr, Summer=May-Aug).
+- Portfolio: rows are the same accordion pattern; Coping-Gacha title links to the official UWaterloo GI 2026 abstract (self-hosted backups in `Papers/`), badge reads "Published at GI 2026"; hovering a title link no longer lights the +/- circle (`:has()` guard).
+- About: "Backyard Brands" links to `#experience`; closing "shipping real products" line removed.
+- All focus outlines on pills/row heads suppressed per user preference.
+- Mobile (390px) verified section-by-section before merge.
 
 ## Plan
 
